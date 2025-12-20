@@ -381,7 +381,10 @@ img {
 .value-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: rgba(0,0,0,0.05);
+    background: var(--gradient-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     line-height: 1;
     min-width: 60px;
 }
