@@ -1,4 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    
+    if (themeToggle) {
+        const icon = themeToggle.querySelector('i');
+
+        // Check for saved user preference, if any, on load of the website
+        const currentTheme = localStorage.getItem('theme');
+        
+        // If the user has a preference, apply it
+        if (currentTheme) {
+            htmlElement.setAttribute('data-theme', currentTheme);
+            if (currentTheme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        } else {
+            // Check system preference
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                htmlElement.setAttribute('data-theme', 'dark');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.getAttribute('data-theme') === 'dark') {
+                htmlElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        });
+    }
+
     // Mobile Menu
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');

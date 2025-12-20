@@ -14,6 +14,29 @@
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --transition: all 0.3s ease;
     --container-width: 1200px;
+    --heading-color: var(--bg-dark);
+    --footer-bg: var(--bg-dark);
+    --card-bg: var(--bg-white);
+    --header-bg: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="dark"] {
+    --primary-color: #3B82F6;
+    --primary-dark: #60A5FA;
+    --secondary-color: #4ADE80;
+    --secondary-dark: #22C55E;
+    --text-color: #E2E8F0;
+    --text-light: #94A3B8;
+    --bg-light: #0F172A;
+    --bg-white: #1E293B;
+    --bg-dark: #F8FAFC; /* Inverted for some specific uses if any remaining */
+    --heading-color: #F8FAFC;
+    --footer-bg: #020617;
+    --card-bg: #1E293B;
+    --header-bg: rgba(15, 23, 42, 0.95);
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
 }
 
 * {
@@ -59,9 +82,33 @@ img {
     text-align: center;
 }
 
+/* Theme Toggle */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    color: var(--primary-color);
+    background-color: rgba(0,0,0,0.05);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
 /* Header */
 .header {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: var(--header-bg);
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -83,7 +130,7 @@ img {
     gap: 10px;
     font-weight: 700;
     font-size: 1.5rem;
-    color: var(--bg-dark);
+    color: var(--heading-color);
 }
 
 .logo-img {
@@ -136,7 +183,7 @@ img {
 }
 
 .btn-secondary {
-    background: white;
+    background: var(--bg-white);
     color: var(--primary-color) !important;
     padding: 10px 24px;
     border-radius: 50px;
@@ -149,7 +196,7 @@ img {
 }
 
 .btn-light {
-    background-color: white;
+    background-color: var(--bg-white);
     color: var(--primary-color);
     padding: 12px 32px;
     border-radius: 50px;
@@ -184,7 +231,7 @@ img {
     font-size: 3.5rem;
     line-height: 1.1;
     margin-bottom: 20px;
-    color: var(--bg-dark);
+    color: var(--heading-color);
 }
 
 .highlight {
@@ -276,7 +323,7 @@ img {
 /* About Section */
 .about {
     padding: 100px 0;
-    background-color: white;
+    background-color: var(--bg-white);
 }
 
 .section-header {
@@ -295,7 +342,7 @@ img {
 
 .section-header h2 {
     font-size: 2.5rem;
-    color: var(--bg-dark);
+    color: var(--heading-color);
     margin-bottom: 20px;
 }
 
@@ -323,7 +370,7 @@ img {
 .about-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
-    background: white;
+    background: var(--card-bg);
     border-color: rgba(37, 99, 235, 0.1);
 }
 
@@ -348,7 +395,7 @@ img {
 .about-card h3 {
     font-size: 1.3rem;
     margin-bottom: 15px;
-    color: var(--bg-dark);
+    color: var(--heading-color);
 }
 
 /* Values Section */
@@ -364,7 +411,7 @@ img {
 }
 
 .value-item {
-    background: white;
+    background: var(--card-bg);
     padding: 30px;
     border-radius: 15px;
     display: flex;
@@ -392,7 +439,7 @@ img {
 .value-content h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: var(--bg-dark);
+    color: var(--heading-color);
 }
 
 .value-content p {
@@ -441,7 +488,7 @@ img {
 
 /* Footer */
 .footer {
-    background-color: var(--bg-dark);
+    background-color: var(--footer-bg);
     color: white;
     padding: 80px 0 30px;
 }
