@@ -203,6 +203,7 @@ img {
 .hero-btns {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 /* Hero Animation Visual */
@@ -211,6 +212,7 @@ img {
     width: 400px;
     height: 400px;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .circle {
@@ -381,6 +383,7 @@ img {
     font-weight: 700;
     color: rgba(0,0,0,0.05);
     line-height: 1;
+    min-width: 60px;
 }
 
 .value-content h3 {
@@ -419,6 +422,7 @@ img {
     z-index: 1;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .cta h2 {
@@ -528,6 +532,26 @@ img {
     }
 }
 
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39), 0 0 0 0 rgba(37, 99, 235, 0.7);
+    }
+    70% {
+        box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39), 0 0 0 10px rgba(37, 99, 235, 0);
+    }
+    100% {
+        box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39), 0 0 0 0 rgba(37, 99, 235, 0);
+    }
+}
+
+.btn-pulse {
+    animation: pulse 2s infinite;
+}
+
+.btn-pulse:hover {
+    animation: none;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .hero-content h1 {
@@ -551,8 +575,18 @@ img {
         margin-top: 50px;
     }
     
+    .connection-visual {
+        width: 300px;
+        height: 300px;
+    }
+
+    .circle-1 { width: 150px; height: 150px; }
+    .circle-2 { width: 180px; height: 180px; }
+    .line { width: 220px; }
+    
     .footer-top {
         grid-template-columns: 1fr 1fr;
+        gap: 40px;
     }
 }
 
@@ -597,6 +631,10 @@ img {
     .section-header h2 {
         font-size: 2rem;
     }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
     
     .footer-top {
         grid-template-columns: 1fr;
@@ -611,5 +649,35 @@ img {
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .value-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .value-number {
+        margin: 0 auto;
+    }
+
+    .connection-visual {
+        width: 250px;
+        height: 250px;
     }
 }
