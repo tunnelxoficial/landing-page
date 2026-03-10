@@ -57,6 +57,10 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -250,6 +254,70 @@ img {
 .hero-btns {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
+}
+
+.legal-page {
+    padding: 140px 0 100px;
+}
+
+.legal-header {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.legal-header h1 {
+    font-size: 2.8rem;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+
+.legal-header p {
+    color: var(--text-light);
+}
+
+.legal-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(37, 99, 235, 0.08);
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-content h2 {
+    font-size: 1.3rem;
+    color: var(--heading-color);
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+.legal-content h2:first-child {
+    margin-top: 0;
+}
+
+.legal-content p {
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.legal-content ul {
+    list-style: disc;
+    padding-left: 22px;
+    margin: 10px 0 16px;
+    color: var(--text-color);
+}
+
+.legal-content li {
+    margin: 8px 0;
+}
+
+.legal-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
@@ -677,6 +745,14 @@ img {
     .hero-content h1 {
         font-size: 2.2rem;
     }
+
+    .legal-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .legal-card {
+        padding: 28px;
+    }
     
     .section-header h2 {
         font-size: 2rem;
@@ -705,6 +781,10 @@ img {
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 1.8rem;
+    }
+
+    .legal-card {
+        padding: 22px;
     }
 
     .hero-btns {
