@@ -1,248 +1,487 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TunnelX - Sua rede, sem barreiras. A principal plataforma de redes privadas virtuais do mundo. Conecte-se com segurança, simplicidade e velocidade.">
-    <meta name="keywords" content="VPN, rede privada, segurança, tunelamento, conexão remota, TunnelX, privacidade, criptografia">
-    <meta name="author" content="TunnelX">
-    <meta name="theme-color" content="#22C55E">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="TunnelX - Sua rede, sem barreiras">
-    <meta property="og:description" content="TunnelX - Sua rede, sem barreiras. A principal plataforma de redes privadas virtuais do mundo. Conecte-se com segurança, simplicidade e velocidade.">
-    <meta property="og:image" content="img/logo.png">
+<title>TunnelX — sua internet, sem configurar nada</title>
+<meta name="description" content="A internet que você contratou chega no seu celular por um caminho só seu. Baixe, entre com o CPF e conecte. Compartilhe com a família por QR code e escolha o prazo.">
+<meta name="theme-color" content="#05080F">
+<link rel="canonical" href="https://www.tunnelx.com.br/">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="TunnelX - Sua rede, sem barreiras">
-    <meta property="twitter:description" content="TunnelX - Sua rede, sem barreiras. A principal plataforma de redes privadas virtuais do mundo. Conecte-se com segurança, simplicidade e velocidade.">
-    <meta property="twitter:image" content="img/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="TunnelX">
+<meta property="og:title" content="TunnelX — sua internet, sem configurar nada">
+<meta property="og:description" content="Baixou. Entrou. Tá na internet. E quando a família pedir, você libera com um QR code e escolhe por quanto tempo vale.">
+<meta property="og:image" content="https://www.tunnelx.com.br/img/logo.png">
+<meta property="og:url" content="https://www.tunnelx.com.br/">
 
-    <title>TunnelX - Sua rede, sem barreiras</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TunnelX — sua internet, sem configurar nada">
+<meta name="twitter:description" content="Baixou. Entrou. Tá na internet.">
+<meta name="twitter:image" content="https://www.tunnelx.com.br/img/logo.png">
+
+<link rel="shortcut icon" href="img/favicon.jpg">
+<link rel="apple-touch-icon" href="img/logo-mark.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <img src="img/logo.png" alt="TunnelX Logo" class="logo-img">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============================================================ cabeçalho -->
+<header class="cabecalho">
+    <div class="container nav">
+        <a href="#" class="marca" aria-label="TunnelX, início">
+            <img src="img/logo-mark.png" alt="" width="34" height="34">
+            <span>TunnelX</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Seções">
+            <a href="#como">Como funciona</a>
+            <a href="#compartilhar">Compartilhar</a>
+            <a href="#duvidas">Dúvidas</a>
+        </nav>
+
+        <a class="botao botao--principal nav-cta" data-loja="android" href="https://play.google.com/store/apps/details?id=com.tunnelxapp">
+            Baixar o app
+        </a>
+    </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ================================================================= herói -->
+<section class="heroi">
+    <div class="marca-fundo" aria-hidden="true">
+        <svg viewBox="0 0 500 500" fill="none">
+            <path d="M40 60h120a90 90 0 0 1 90 90v200a90 90 0 0 1-90 90H40a210 210 0 0 1 115-190A210 210 0 0 1 40 60Z" fill="#1356C1"/>
+            <path d="M460 60H340a90 90 0 0 0-90 90v200a90 90 0 0 0 90 90h120a210 210 0 0 0-115-190A210 210 0 0 0 460 60Z" fill="#5CF463"/>
+        </svg>
+    </div>
+
+    <div class="container heroi-grade">
+        <div class="heroi-conteudo">
+            <p class="selo"><i class="pulso"></i> Disponível agora no Google Play</p>
+
+            <h1 class="display">
+                <span class="linha"><span>Baixou.</span></span>
+                <span class="linha"><span>Entrou.</span></span>
+                <span class="linha"><span class="texto-gradiente">Tá na internet.</span></span>
+            </h1>
+
+            <p class="subtexto heroi-sub">
+                A internet que você contratou chega no seu celular por um caminho só seu —
+                sem configurar nada, sem esperar técnico, sem ligar pra ninguém. E quando a
+                família pedir, você libera com um QR code e escolhe por quanto tempo vale.
+            </p>
+
+            <div class="heroi-acoes">
+                <div class="lojas">
+                    <a class="loja loja--destaque" data-loja="android" href="https://play.google.com/store/apps/details?id=com.tunnelxapp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8a1.5 1.5 0 0 0-.6 1.2v18c0 .5.2.9.6 1.2l10.1-10.2L3.6 1.8Zm12 7.7L5.9 1.1l11.6 6.6-1.9 1.8Zm0 5 1.9 1.8L5.9 22.9l9.7-8.4Zm2.9-4.3 2.6 1.5c.6.4.6 1.3 0 1.6l-2.6 1.5L16 12l2.5-1.8Z"/></svg>
+                        <span>
+                            <span class="loja-cima">Baixar no</span>
+                            <span class="loja-nome">Google Play</span>
+                        </span>
+                    </a>
+
+                    <button class="loja loja--ios" type="button" data-loja-ios aria-expanded="false" aria-controls="aviso-ios">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6-.1 0-2.5-1-2.5-3.8ZM14.2 5.4c.6-.8 1-1.9.9-3-.9 0-2.1.6-2.8 1.4-.6.7-1.1 1.8-.9 2.9 1 .1 2.1-.5 2.8-1.3Z"/></svg>
+                        <span>
+                            <span class="loja-cima">Em breve na</span>
+                            <span class="loja-nome">App Store</span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="aviso" id="aviso-ios" hidden>
+                    A versão para iPhone está em análise na Apple. Assim que for liberada,
+                    ela aparece aqui. Por enquanto, o TunnelX funciona no Android.
+                </div>
+
+                <p class="heroi-nota">
+                    Grátis para baixar · Android 7 ou superior · Na loja o app se chama <b>Tunnel&nbsp;X</b>
+                </p>
+            </div>
+        </div>
+
+        <!-- O aparelho: desenhado em HTML e CSS, e não uma captura de tela.
+             Fica nítido em qualquer densidade, carrega junto com a página e
+             acompanha o tema sem ninguém ter que refazer imagem. -->
+        <div class="fone-palco" aria-hidden="true">
+            <div class="fone" id="fone">
+                <div class="fone-tela">
+                    <div class="app-topo">
+                        <span class="app-hora">21:04</span>
+                        <span class="app-sinal"><i></i><i></i><i></i></span>
+                    </div>
+
+                    <div class="app-corpo">
+                        <p class="app-ola">Olá, Marcos</p>
+
+                        <div class="orbe" id="orbe">
+                            <div class="orbe-anel"></div>
+                            <div class="orbe-anel orbe-anel--2"></div>
+                            <div class="orbe-centro">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <path d="M12 3v9"/><path d="M6.5 6.5a8 8 0 1 0 11 0"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <p class="app-estado" id="app-estado">Desconectado</p>
+                        <p class="app-tunel" id="app-tunel">Toque para conectar</p>
+
+                        <div class="app-lista">
+                            <div class="app-item">
+                                <i class="ponto ponto--on"></i>
+                                <div class="aparelho-nome"><b>Casa</b><span>Plano Família</span></div>
+                                <span class="etiqueta etiqueta--titular">Titular</span>
+                            </div>
+                            <div class="app-item">
+                                <i class="ponto"></i>
+                                <div class="aparelho-nome"><b>Camila</b><span>iPhone 13</span></div>
+                                <span class="etiqueta etiqueta--convidado">Convidado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================= o que não é -->
+<!--
+     Esta seção é a SEGUNDA de propósito. No Brasil, "túnel" e "VPN" carregam
+     a suspeita de pirataria e de burlar bloqueio. Deixar essa dúvida atravessar
+     mais de uma tela custa a venda — e atrai o cliente errado.
+-->
+<section class="secao secao--declaracao">
+    <div class="container">
+        <h2 class="declaracao revela">
+            A sua internet tem um caminho
+            <span class="sublinhado">próprio</span> até você.
+        </h2>
+
+        <div class="declaracao-apoio revela" data-atraso="1">
+            <p class="subtexto">
+                Você já contratou o seu plano. O TunnelX é o caminho por onde ele chega no
+                seu aparelho — e no aparelho de quem você convidar. Um caminho reservado,
+                que não se divide com ninguém de fora da sua casa.
+            </p>
+            <p class="declaracao-fecho">Sua rede, sem barreiras.</p>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================== três passos -->
+<section class="secao secao--painel" id="como">
+    <div class="container">
+        <div class="secao-cabeca revela">
+            <p class="olho">Como funciona</p>
+            <h2 class="titulo-secao">Três passos. Nenhum técnico.</h2>
+        </div>
+
+        <ol class="passos">
+            <li class="passo revela">
+                <span class="passo-num">01</span>
+                <h3>Baixe o app</h3>
+                <p>Google Play, no celular Android. Instala em segundos.</p>
+            </li>
+            <li class="passo revela" data-atraso="1">
+                <span class="passo-num">02</span>
+                <h3>Entre com CPF e senha</h3>
+                <p>Os mesmos que você usou na contratação. Não tem arquivo pra importar, não tem servidor pra escolher.</p>
+            </li>
+            <li class="passo revela" data-atraso="2">
+                <span class="passo-num">03</span>
+                <h3>Toque em conectar</h3>
+                <p>Acabou. É isso mesmo.</p>
+            </li>
+        </ol>
+
+        <p class="passos-fecho revela" data-atraso="3">
+            O seu túnel já está montado esperando você abrir o app pela primeira vez.
+        </p>
+    </div>
+</section>
+
+<!-- ============================================================ uma chave -->
+<section class="secao">
+    <div class="container secao-dupla">
+        <div class="revela">
+            <p class="olho">Estabilidade</p>
+            <h2 class="titulo-secao">Cada aparelho ganha uma chave só dele.</h2>
+            <p class="subtexto secao-dupla-texto">
+                Antes, os aparelhos da casa disputavam o mesmo endereço. O resultado era o
+                que todo mundo já viveu: cai, volta, fica lento, cai de novo. Isso foi
+                reescrito. Hoje cada celular, cada tablet, cada televisão tem chave e
+                endereço próprios dentro do túnel. O que um faz não atrapalha o outro.
+            </p>
+            <p class="carimbos">
+                <span>Sem queda</span><span>Sem oscilação</span><span>Sem remendo</span>
+            </p>
+        </div>
+
+        <div class="trilhas revela" data-atraso="1" aria-hidden="true">
+            <div class="trilha"><b>Antes</b>
+                <div class="fios fios--brigando">
+                    <i></i><i></i><i></i><i></i>
+                </div>
+                <span class="trilha-nota">quatro aparelhos, um caminho</span>
+            </div>
+            <div class="trilha"><b>Agora</b>
+                <div class="fios fios--proprios">
+                    <i></i><i></i><i></i><i></i>
+                </div>
+                <span class="trilha-nota">quatro aparelhos, quatro caminhos</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================== compartilhar -->
+<section class="secao secao--painel" id="compartilhar">
+    <div class="container">
+        <div class="secao-cabeca revela">
+            <p class="olho">O coração do produto</p>
+            <h2 class="titulo-secao">Passe a internet adiante<br>com um QR&nbsp;code.</h2>
+            <p class="subtexto">
+                Você mostra o código na sua tela, a pessoa aponta a câmera e entra. Não
+                precisa mandar senha por WhatsApp, nem mexer em configuração nenhuma.
+            </p>
+        </div>
+
+        <div class="compartilhar-grade">
+            <div class="cartao cartao--qr revela">
+                <div class="qr" id="qr" aria-hidden="true"></div>
+                <p class="qr-legenda">Convite gerado no app do titular</p>
+            </div>
+
+            <div class="cartao cartao--prazo revela" data-atraso="1">
+                <div class="cartao-topo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                    <span>Você escolhe o prazo</span>
+                </div>
+
+                <h3>Duas horas, um mês, ou sem prazo.</h3>
+                <p>O relógio só começa quando a pessoa aceita o convite — e não quando você gera o código.</p>
+
+                <div class="chips" role="group" aria-label="Prazo do convite">
+                    <button type="button" class="chip" data-horas="2">2 horas</button>
+                    <button type="button" class="chip ativo" data-horas="24">24 horas</button>
+                    <button type="button" class="chip" data-horas="168">7 dias</button>
+                    <button type="button" class="chip" data-horas="720">1 mês</button>
+                    <button type="button" class="chip" data-horas="0">Sem prazo</button>
+                </div>
+
+                <div class="convidado">
+                    <i class="ponto ponto--on"></i>
+                    <div class="aparelho-nome">
+                        <b>Camila</b>
+                        <span>entrou pelo seu convite</span>
+                    </div>
+                    <span class="relogio" id="relogio" aria-live="off">23:59:58</span>
+                </div>
+            </div>
+
+            <div class="cartao cartao--corte revela" data-atraso="2">
+                <div class="cartao-topo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                    <span>E se mudar de ideia</span>
+                </div>
+                <h3>Tira o acesso e pronto.</h3>
+                <p>Saiu na hora. Sem ligar para ninguém, sem esperar 24 horas, sem explicação. A vaga volta para o seu plano no mesmo instante.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================================================================ vagas -->
+<section class="secao">
+    <div class="container secao-dupla secao-dupla--inversa">
+        <div class="vagas revela" aria-hidden="true">
+            <div class="vagas-topo">
+                <span><b id="vagas-conta" data-contar="8">0</b> de 8 aparelhos</span>
+                <span class="vagas-plano">Plano Família</span>
+            </div>
+            <div class="vagas-barra" id="vagas-barra">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="vagas-escada">
+                <span>Básico · 2</span><span>Médio · 4</span><span class="forte">Família · 8</span>
+            </div>
+        </div>
+
+        <div class="revela" data-atraso="1">
+            <p class="olho">O plano em gente</p>
+            <h2 class="titulo-secao">Uma internet.<br>A casa inteira.</h2>
+            <p class="subtexto secao-dupla-texto">
+                O seu plano diz quantos aparelhos cabem no túnel: dois, quatro ou oito.
+                O seu, o da sua esposa, o dos filhos, o da sua mãe, a televisão da sala.
+                Enquanto houver vaga, você convida; quando alguém sai, a vaga volta.
+            </p>
+            <a class="botao botao--fantasma" data-loja="android" href="https://play.google.com/store/apps/details?id=com.tunnelxapp">
+                Ver planos no app
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================== o que não faz -->
+<!--
+     Privacidade dita por subtração. Quatro negativas honestas convencem mais
+     que dez selos de cadeado, e cada uma delas corresponde ao que o código
+     realmente faz — nenhuma promessa que o produto não sustente.
+-->
+<section class="secao secao--painel">
+    <div class="container">
+        <div class="secao-cabeca revela">
+            <p class="olho">Transparência</p>
+            <h2 class="titulo-secao">O que o TunnelX não faz.</h2>
+        </div>
+
+        <ul class="negativas">
+            <li class="revela">
+                <h3>Não guarda o seu histórico de navegação.</h3>
+                <p>O endereço que resolve os sites é o público do Google. Não operamos servidor de DNS, então não existe lista de sites para guardar.</p>
+            </li>
+            <li class="revela" data-atraso="1">
+                <h3>Não é um serviço de anonimato.</h3>
+                <p>O TunnelX entrega a internet que você contratou. Quem procura navegar sem identificação precisa de outro tipo de serviço.</p>
+            </li>
+            <li class="revela" data-atraso="2">
+                <h3>Não serve para abrir o que está bloqueado.</h3>
+                <p>Nem em site, nem em país, nem em serviço de streaming.</p>
+            </li>
+            <li class="revela" data-atraso="3">
+                <h3>Não deixa duas pessoas na mesma conta.</h3>
+                <p>Entrou em outro aparelho, o primeiro sai. Quem precisa de mais gente usa o convite, e não a sua senha.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================================== dúvidas -->
+<section class="secao" id="duvidas">
+    <div class="container container--estreito">
+        <div class="secao-cabeca centro revela">
+            <p class="olho">Dúvidas</p>
+            <h2 class="titulo-secao">Perguntas que todo mundo faz.</h2>
+        </div>
+
+        <div class="faq revela" data-atraso="1">
+            <details>
+                <summary>Preciso instalar alguma coisa em casa?</summary>
+                <p>Não. Nada de aparelho novo, nada de mexer no roteador, nada de visita técnica. O TunnelX vive no celular.</p>
+            </details>
+            <details>
+                <summary>Funciona no iPhone?</summary>
+                <p>Ainda não. A versão para iPhone está em análise na Apple. Por enquanto o TunnelX funciona no Android 7 ou superior.</p>
+            </details>
+            <details>
+                <summary>Quem eu convidar precisa pagar?</summary>
+                <p>Não. O convidado entra no seu plano e ocupa uma das vagas que você já contratou. Quem paga é você, uma vez só.</p>
+            </details>
+            <details>
+                <summary>E se eu trocar de celular?</summary>
+                <p>Basta baixar o app no aparelho novo e entrar com o mesmo CPF e senha. O seu túnel volta sozinho.</p>
+            </details>
+            <details>
+                <summary>Dá para usar em dois celulares ao mesmo tempo?</summary>
+                <p>Na mesma conta, não: entrar no segundo aparelho desconecta o primeiro. Para colocar mais gente, use o convite por QR code — foi feito exatamente para isso.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================== chamada final -->
+<section class="secao">
+    <div class="container">
+        <div class="chamada revela">
+            <h2 class="titulo-secao">Agora baixa.</h2>
+            <p class="subtexto">Leva um minuto, e o seu túnel já está pronto esperando.</p>
+
+            <div class="lojas">
+                <a class="loja loja--destaque" data-loja="android" href="https://play.google.com/store/apps/details?id=com.tunnelxapp">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8a1.5 1.5 0 0 0-.6 1.2v18c0 .5.2.9.6 1.2l10.1-10.2L3.6 1.8Zm12 7.7L5.9 1.1l11.6 6.6-1.9 1.8Zm0 5 1.9 1.8L5.9 22.9l9.7-8.4Zm2.9-4.3 2.6 1.5c.6.4.6 1.3 0 1.6l-2.6 1.5L16 12l2.5-1.8Z"/></svg>
+                    <span>
+                        <span class="loja-cima">Baixar no</span>
+                        <span class="loja-nome">Google Play</span>
+                    </span>
+                </a>
+
+                <button class="loja loja--ios" type="button" data-loja-ios aria-expanded="false" aria-controls="aviso-ios-2">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6-.1 0-2.5-1-2.5-3.8ZM14.2 5.4c.6-.8 1-1.9.9-3-.9 0-2.1.6-2.8 1.4-.6.7-1.1 1.8-.9 2.9 1 .1 2.1-.5 2.8-1.3Z"/></svg>
+                    <span>
+                        <span class="loja-cima">Em breve na</span>
+                        <span class="loja-nome">App Store</span>
+                    </span>
+                </button>
+            </div>
+
+            <div class="aviso" id="aviso-ios-2" hidden>
+                A versão para iPhone está em análise na Apple. Assim que for liberada, ela aparece aqui.
+            </div>
+
+            <p class="chamada-marca">TunnelX — sua rede, sem barreiras.</p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ================================================================ rodapé -->
+<footer class="rodape">
+    <div class="container">
+        <div class="rodape-grade">
+            <div class="rodape-marca">
+                <a href="#" class="marca">
+                    <img src="img/logo-mark.png" alt="" width="30" height="30">
                     <span>TunnelX</span>
                 </a>
-                <ul class="nav-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#features">Recursos</a></li>
-                    <li><a href="#values">Valores</a></li>
-                    <li>
-                        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
-                            <i class="fa-solid fa-moon"></i>
-                        </button>
-                    </li>
-                    <li><a href="venda.html" class="btn-primary btn-pulse">Assinar Agora</a></li>
+                <p>Sua rede, sem barreiras.</p>
+            </div>
+
+            <div>
+                <h4>Produto</h4>
+                <ul>
+                    <li><a data-loja="android" href="https://play.google.com/store/apps/details?id=com.tunnelxapp">Baixar no Google Play</a></li>
+                    <li><a href="#como">Como funciona</a></li>
+                    <li><a href="#compartilhar">Compartilhar acesso</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-container">
-            <div class="hero-content fade-in-up">
-                <h1>Sua rede, <span class="highlight">sem barreiras.</span></h1>
-                <p>Conecte pessoas, empresas e dispositivos de forma simples, segura e sem fronteiras. A internet como sua rede local confiável.</p>
-                <div class="hero-btns">
-                    <a href="venda.html" class="btn-primary btn-pulse">Assinar Agora</a>
-                    <a href="#about" class="btn-secondary">Saiba Mais</a>
-                </div>
             </div>
-            <div class="hero-image fade-in-up delay-200">
-                <!-- Abstract visual representation of tunneling/connection -->
-                <div class="connection-visual">
-                    <div class="circle circle-1"></div>
-                    <div class="circle circle-2"></div>
-                    <div class="line"></div>
-                    <i class="fa-solid fa-shield-halved shield-icon"></i>
-                </div>
+
+            <div>
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#duvidas">Dúvidas</a></li>
+                    <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#duvidas">Perguntas frequentes</a></li>
+                </ul>
             </div>
         </div>
-    </section>
 
-    <!-- Vision/Mission Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="subtitle">Nossa Missão</span>
-                <h2>Conexão Inteligente e Acessível</h2>
-                <p>Empoderamos equipes e indivíduos a trabalharem de qualquer lugar com a mesma experiência do escritório.</p>
-            </div>
-            
-            <div class="about-grid">
-                <div class="about-card scroll-reveal">
-                    <div class="icon-box">
-                        <i class="fa-solid fa-globe"></i>
-                    </div>
-                    <h3>Sem Fronteiras</h3>
-                    <p>Conecte-se de qualquer lugar do mundo como se estivesse localmente.</p>
-                </div>
-                <div class="about-card scroll-reveal delay-100">
-                    <div class="icon-box">
-                        <i class="fa-solid fa-lock"></i>
-                    </div>
-                    <h3>Segurança Total</h3>
-                    <p>Criptografia de ponta a ponta para proteger seus dados e comunicações.</p>
-                </div>
-                <div class="about-card scroll-reveal delay-200">
-                    <div class="icon-box">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                    <h3>Alta Performance</h3>
-                    <p>Rede privada intuitiva, escalável e de alto desempenho.</p>
-                </div>
-            </div>
+        <div class="rodape-fim">
+            <p>&copy; <span id="ano">2026</span> TunnelX. Todos os direitos reservados.</p>
+            <p>Na Google Play o app se chama <b>Tunnel X</b>.</p>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <!-- Values Section -->
-    <section id="values" class="values">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="subtitle">Nossos Valores</span>
-                <h2>O que nos move</h2>
-            </div>
-            
-            <div class="values-grid">
-                <!-- Value 1 -->
-                <div class="value-item scroll-reveal">
-                    <div class="value-number">01</div>
-                    <div class="value-content">
-                        <h3>Simplicidade</h3>
-                        <p>Conectar deve ser tão fácil quanto clicar em um botão. Eliminamos barreiras técnicas.</p>
-                    </div>
-                </div>
-                <!-- Value 2 -->
-                <div class="value-item scroll-reveal delay-100">
-                    <div class="value-number">02</div>
-                    <div class="value-content">
-                        <h3>Privacidade</h3>
-                        <p>Toda conexão segura por padrão. Seus dados são seus, com criptografia total.</p>
-                    </div>
-                </div>
-                <!-- Value 3 -->
-                <div class="value-item scroll-reveal delay-200">
-                    <div class="value-number">03</div>
-                    <div class="value-content">
-                        <h3>Velocidade</h3>
-                        <p>Performance é prioridade. Redes rápidas, confiáveis e sem burocracia.</p>
-                    </div>
-                </div>
-                <!-- Value 4 -->
-                <div class="value-item scroll-reveal">
-                    <div class="value-number">04</div>
-                    <div class="value-content">
-                        <h3>Confiança</h3>
-                        <p>Ética e clareza. Você tem controle total sobre seus dados e conexões.</p>
-                    </div>
-                </div>
-                <!-- Value 5 -->
-                <div class="value-item scroll-reveal delay-100">
-                    <div class="value-number">05</div>
-                    <div class="value-content">
-                        <h3>Liberdade</h3>
-                        <p>Quebramos barreiras geográficas. Trabalhe, jogue e colabore de onde estiver.</p>
-                    </div>
-                </div>
-                <!-- Value 6 -->
-                <div class="value-item scroll-reveal delay-200">
-                    <div class="value-number">06</div>
-                    <div class="value-content">
-                        <h3>Inovação</h3>
-                        <p>Evolução contínua para antecipar suas necessidades com novas tecnologias.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="contact" class="cta">
-        <div class="container">
-            <div class="cta-content text-center scroll-reveal">
-                <h2>Pronto para uma internet sem barreiras?</h2>
-                <p>Junte-se ao TunnelX e transforme sua experiência de conexão hoje mesmo.</p>
-                <a href="#" class="btn-light">Baixar TunnelX</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <span class="logo-text">TunnelX</span>
-                    </a>
-                    <p>Sua rede, sem barreiras.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Produto</h4>
-                    <ul>
-                        <li><a href="#">Download</a></li>
-                        <li><a href="#">Recursos</a></li>
-                        <li><a href="#">Preços</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Empresa</h4>
-                    <ul>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#values">Valores</a></li>
-                        <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Suporte</h4>
-                    <ul>
-                        <li><a href="#">Ajuda</a></li>
-                        <li><a href="#">Status</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 TunnelX. Todos os direitos reservados.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
