@@ -4,7 +4,7 @@
   iframe e nao entra, porque sitemap com pagina sem conteudo proprio ensina o
   Google a confiar menos no arquivo inteiro.
 
-  As URLs usam www e barra final, iguais as declaradas em rel="canonical".
+  As URLs usam www e sao identicas as declaradas em rel="canonical".
   Divergir aqui e a forma mais comum de o Google indexar dois enderecos para a
   mesma pagina e dividir a forca entre eles.
 -->

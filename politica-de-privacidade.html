@@ -19,34 +19,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.className += " js";</script>
+<!-- A classe acima liga o estado escondido das secoes que entram animadas.
+     Ela e posta ANTES da folha de estilo justamente para nao haver um quadro
+     com o conteudo visivel antes de sumir. Sem JS, a classe nunca aparece e a
+     pagina e exibida inteira. -->
 <link rel="stylesheet" href="css/style.css">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Início",
-      "item": "https://www.tunnelx.com.br/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Política de Privacidade",
-      "item": "https://www.tunnelx.com.br/politica-de-privacidade.html"
-    }
-  ]
-}
-</script>
 </head>
 <body>
 <header class="cabecalho">
     <div class="container nav">
-        <a href="index.html" class="marca">
-            <img src="img/logo-mark.png" alt="" width="34" height="34">
+        <a href="/" class="marca">
+            <img src="img/logo-mark-96.png" alt="" width="34" height="34">
             <span>TunnelX</span>
         </a>
         <a class="botao botao--principal nav-cta" data-loja="android" href="https://play.google.com/store/apps/details?id=com.tunnelxapp">Baixar o app</a>
@@ -112,7 +97,7 @@
                 </div>
 
                 <div class="legal-acoes">
-                    <a href="index.html" class="botao botao--fantasma">Voltar para o site</a>
+                    <a href="/" class="botao botao--fantasma">Voltar para o site</a>
                     <a class="botao botao--principal" data-loja="android" href="https://play.google.com/store/apps/details?id=com.tunnelxapp">Baixar o app</a>
                 </div>
             </div>
@@ -123,8 +108,8 @@
     <div class="container">
         <div class="rodape-grade">
             <div class="rodape-marca">
-                <a href="index.html" class="marca">
-                    <img src="img/logo-mark.png" alt="" width="30" height="30" loading="lazy" decoding="async">
+                <a href="/" class="marca">
+                    <img src="img/logo-mark-96.png" alt="" width="30" height="30" loading="lazy" decoding="async">
                     <span>TunnelX</span>
                 </a>
                 <p>Sua rede, sem barreiras.</p>
@@ -133,21 +118,21 @@
                 <h4>Produto</h4>
                 <ul>
                     <li><a data-loja="android" href="https://play.google.com/store/apps/details?id=com.tunnelxapp">Baixar no Google Play</a></li>
-                    <li><a href="index.html#como">Como funciona</a></li>
-                    <li><a href="index.html#compartilhar">Compartilhar acesso</a></li>
+                    <li><a href="/#como">Como funciona</a></li>
+                    <li><a href="/#compartilhar">Compartilhar acesso</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Empresa</h4>
                 <ul>
-                    <li><a href="index.html#duvidas">Dúvidas</a></li>
+                    <li><a href="/#duvidas">Dúvidas</a></li>
                     <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Suporte</h4>
                 <ul>
-                    <li><a href="index.html#duvidas">Perguntas frequentes</a></li>
+                    <li><a href="/#duvidas">Perguntas frequentes</a></li>
                 </ul>
             </div>
         </div>

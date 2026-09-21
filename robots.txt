@@ -1,17 +1,20 @@
 # TunnelX — https://www.tunnelx.com.br
 #
-# O site inteiro e publico e deve ser rastreado. As duas excecoes abaixo nao sao
-# segredo: sao paginas sem valor de busca que, indexadas, competiriam com a
-# pagina principal pelas mesmas palavras e diluiriam o resultado.
+# O site inteiro e publico e deve ser rastreado.
+#
+# venda.html NAO aparece aqui de proposito. Ela e uma casca de iframe sem
+# conteudo proprio e precisa ficar fora do indice — mas quem faz isso e a meta
+# robots "noindex" dentro da propria pagina. Bloquear aqui teria o efeito
+# CONTRARIO: sem poder baixar o arquivo, o Google nunca leria o noindex, e a URL
+# ainda poderia ser indexada sozinha, sem titulo nem descricao, caso alguem a
+# linkasse. As duas medidas juntas se anulam; a que funciona e o noindex.
 
 User-agent: *
 Allow: /
 
-# Casca de iframe para o checkout que mora em outro dominio. Indexada, ela
-# aparece na busca como uma pagina em branco.
-Disallow: /venda.html
-
-# Documento interno de marca, nao e conteudo de site.
+# Documento interno de marca, nao e conteudo de site. Aqui o Disallow serve,
+# porque um .txt nao tem como carregar meta tag — mas ele so evita o rastreio,
+# nao esconde o arquivo de quem digitar o endereco. O certo e apagar.
 Disallow: /sobre.txt
 
 Sitemap: https://www.tunnelx.com.br/sitemap.xml

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>TunnelX — sua internet, sem configurar nada</title>
-<meta name="description" content="A internet que você contratou chega no seu celular por um caminho só seu. Baixe, entre com o CPF e conecte. Compartilhe com a família por QR code e escolha o prazo.">
+<meta name="description" content="A internet que você contratou chega no seu celular por um caminho só seu. Baixe, entre com o CPF e conecte. Compartilhe com a família por QR code.">
 <meta name="theme-color" content="#05080F">
 <!-- max-image-preview:large libera a miniatura grande no resultado; sem isso
      o Google usa a pequena e o resultado ocupa menos espaco na tela. -->
@@ -34,6 +34,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.className += " js";</script>
+<!-- A classe acima liga o estado escondido das secoes que entram animadas.
+     Ela e posta ANTES da folha de estilo justamente para nao haver um quadro
+     com o conteudo visivel antes de sumir. Sem JS, a classe nunca aparece e a
+     pagina e exibida inteira. -->
 <link rel="stylesheet" href="css/style.css">
 
 <!-- Dados estruturados. O FAQPage e gerado a partir das perguntas que estao
@@ -79,7 +84,7 @@
       "name": "Tunnel X",
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "Conectividade",
-      "operatingSystem": "Android 7.0 ou superior",
+      "operatingSystem": "ANDROID",
       "url": "https://www.tunnelx.com.br/",
       "installUrl": "https://play.google.com/store/apps/details?id=com.tunnelxapp",
       "downloadUrl": "https://play.google.com/store/apps/details?id=com.tunnelxapp",
@@ -159,8 +164,8 @@
 <!-- ============================================================ cabeçalho -->
 <header class="cabecalho">
     <div class="container nav">
-        <a href="#" class="marca" aria-label="TunnelX, início">
-            <img src="img/logo-mark.png" alt="" width="34" height="34" fetchpriority="high" decoding="async">
+        <a href="/" class="marca" aria-label="TunnelX, início">
+            <img src="img/logo-mark-96.png" alt="" width="34" height="34" fetchpriority="high" decoding="async">
             <span>TunnelX</span>
         </a>
 
@@ -565,8 +570,8 @@
     <div class="container">
         <div class="rodape-grade">
             <div class="rodape-marca">
-                <a href="#" class="marca">
-                    <img src="img/logo-mark.png" alt="" width="30" height="30" loading="lazy" decoding="async">
+                <a href="/" class="marca">
+                    <img src="img/logo-mark-96.png" alt="" width="30" height="30" loading="lazy" decoding="async">
                     <span>TunnelX</span>
                 </a>
                 <p>Sua rede, sem barreiras.</p>

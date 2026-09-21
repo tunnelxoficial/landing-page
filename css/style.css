@@ -1022,11 +1022,16 @@ button { font: inherit; color: inherit; }
 
 /* ------------------------------------------------------------- revelacao -- */
 /*
-   O estado final e o padrao: se o JS nao rodar, o conteudo aparece normalmente
-   em vez de ficar invisivel para sempre.
+   O estado escondido so existe quando o JS esta ligado.
+
+   Antes, `.revela { opacity: 0 }` valia sempre, e quem tem o JS bloqueado — por
+   extensao, por rede que derrubou o arquivo, por erro de sintaxe num navegador
+   antigo — recebia a pagina quase em branco: o texto estava no HTML, o Google
+   lia tudo, e a pessoa nao via nada. A classe `js` e posta no <html> por um
+   script embutido no proprio <head>, antes da primeira pintura.
 */
-.revela { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--curva), transform .8s var(--curva); }
-.revela.visivel { opacity: 1; transform: none; }
+.js .revela { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--curva), transform .8s var(--curva); }
+.js .revela.visivel { opacity: 1; transform: none; }
 
 .revela[data-atraso="1"] { transition-delay: .09s; }
 .revela[data-atraso="2"] { transition-delay: .18s; }

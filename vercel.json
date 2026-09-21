@@ -1,0 +1,65 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+
+    "//": [
+        "A hospedagem e Vercel (confirmado pelos cabecalhos Server: Vercel e",
+        "X-Vercel-Cache na resposta do dominio), e nao GitHub Pages.",
+        "",
+        "Dois problemas que so dava para resolver aqui, e nao dentro do HTML:",
+        "",
+        "1. /index.html respondia 200 com o mesmo conteudo de /, byte a byte.",
+        "   Duas URLs para a pagina inteira. O rel=canonical era a unica defesa, e",
+        "   ele e uma sugestao, nao uma ordem. Pior: a ficha do app na Google Play",
+        "   aponta para /index.html, entao o backlink mais forte que existe apontava",
+        "   justo para a copia. O redirect 308 abaixo desfaz isso na origem.",
+        "",
+        "2. Todo arquivo era servido com max-age=0, must-revalidate. A cada visita,",
+        "   o navegador reperguntava por CSS, JS e imagens que nao mudam."
+    ],
+
+    "cleanUrls": true,
+    "trailingSlash": false,
+
+    "redirects": [
+        {
+            "source": "/index.html",
+            "destination": "/",
+            "permanent": true
+        }
+    ],
+
+    "headers": [
+        {
+            "//": [
+                "Um dia de cache. Nao um ano: os arquivos nao tem hash no nome, entao",
+                "uma correcao urgente precisa chegar sem esperar o cache expirar.",
+                "Quando o nome passar a ser versionado, isto vira immutable."
+            ],
+            "source": "/(img|css|js)/(.*)",
+            "headers": [
+                { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
+            ]
+        },
+        {
+            "//": "O HTML sempre revalida, senao uma troca de texto demora a aparecer.",
+            "source": "/(.*).html",
+            "headers": [
+                { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+            ]
+        },
+        {
+            "//": [
+                "sobre.txt e um documento interno de marca que ficou publico na raiz.",
+                "Ele afirma coisas que o site nao sustenta mais ('principal plataforma",
+                "de redes privadas virtuais do mundo'), e o Disallow no robots.txt",
+                "impede o rastreio mas NAO tira do indice quem ja o encontrou.",
+                "X-Robots-Tag e o unico jeito de dizer noindex num arquivo que nao",
+                "aceita meta tag. O certo, ainda assim, e apagar o arquivo."
+            ],
+            "source": "/sobre.txt",
+            "headers": [
+                { "key": "X-Robots-Tag", "value": "noindex" }
+            ]
+        }
+    ]
+}

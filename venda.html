@@ -7,8 +7,10 @@
     <!-- Esta pagina so embute o checkout que mora em outro dominio. Indexada,
          ela aparece na busca como uma pagina vazia e disputa as mesmas
          palavras da pagina principal. -->
+    <!-- Sem rel=canonical junto: noindex mais canonical para outra URL e
+         combinacao desaconselhada pelo Google — o noindex pode ser
+         transportado para o destino. O "follow" ja passa os links adiante. -->
     <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="https://www.tunnelx.com.br/">
     <style>
         body, html {
             margin: 0;
