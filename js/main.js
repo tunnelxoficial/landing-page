@@ -185,18 +185,16 @@
 
             const dois = (n) => String(n).padStart(2, '0');
 
-            // Acima de um dia, contar segundos nao diz nada a ninguem.
-            relogio.textContent = h >= 24
-                ? Math.floor(h / 24) + (Math.floor(h / 24) === 1 ? ' dia' : ' dias')
+            // A partir de dois dias, contar segundos nao diz nada a ninguem.
+            // O corte e em 48h, e nao em 24h: com 24h o prazo mais escolhido
+            // apareceria como "1 dia" parado, e o contador correndo e justamente
+            // o que mostra que aquilo e a interface e nao uma figura.
+            relogio.textContent = h >= 48
+                ? Math.floor(h / 24) + ' dias'
                 : dois(h) + ':' + dois(m) + ':' + dois(s);
         };
 
-        const escolher = (chip) => {
-            chips.forEach((c) => c.classList.toggle('ativo', c === chip));
-
-            restante = Number(chip.dataset.horas) * 3600;
-            escrever();
-
+        const correr = () => {
             clearInterval(tique);
             if (restante <= 0 || semMovimento) return;
 
@@ -207,16 +205,25 @@
             }, 1000);
         };
 
+        const escolher = (chip) => {
+            chips.forEach((c) => c.classList.toggle('ativo', c === chip));
+
+            restante = Number(chip.dataset.horas) * 3600;
+            escrever();
+            correr();
+        };
+
         chips.forEach((chip) => chip.addEventListener('click', () => escolher(chip)));
 
         const inicial = document.querySelector('.chip.ativo') || chips[0];
         escolher(inicial);
 
-        // Parar de contar quando a aba sai de vista: nao ha motivo para gastar
-        // bateria num relogio que ninguem esta olhando.
+        // Parar de contar quando a aba sai de vista, e VOLTAR quando ela retorna.
+        // Sem a volta, o relogio congelava no valor em que parou e a secao ficava
+        // com um numero morto — o contrario exato do que ela existe para mostrar.
         document.addEventListener('visibilitychange', () => {
-            if (!document.hidden) return;
-            clearInterval(tique);
+            if (document.hidden) clearInterval(tique);
+            else correr();
         });
     }
 

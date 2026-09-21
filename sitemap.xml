@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Mapa do site. Duas paginas — e sao duas mesmo: venda.html e uma casca de
+  iframe e nao entra, porque sitemap com pagina sem conteudo proprio ensina o
+  Google a confiar menos no arquivo inteiro.
+
+  As URLs usam www e barra final, iguais as declaradas em rel="canonical".
+  Divergir aqui e a forma mais comum de o Google indexar dois enderecos para a
+  mesma pagina e dividir a forca entre eles.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.tunnelx.com.br/</loc>
+        <lastmod>2026-09-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.tunnelx.com.br/politica-de-privacidade.html</loc>
+        <lastmod>2026-09-21</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+</urlset>

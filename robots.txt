@@ -1,0 +1,17 @@
+# TunnelX — https://www.tunnelx.com.br
+#
+# O site inteiro e publico e deve ser rastreado. As duas excecoes abaixo nao sao
+# segredo: sao paginas sem valor de busca que, indexadas, competiriam com a
+# pagina principal pelas mesmas palavras e diluiriam o resultado.
+
+User-agent: *
+Allow: /
+
+# Casca de iframe para o checkout que mora em outro dominio. Indexada, ela
+# aparece na busca como uma pagina em branco.
+Disallow: /venda.html
+
+# Documento interno de marca, nao e conteudo de site.
+Disallow: /sobre.txt
+
+Sitemap: https://www.tunnelx.com.br/sitemap.xml

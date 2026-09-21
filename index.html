@@ -7,6 +7,9 @@
 <title>TunnelX — sua internet, sem configurar nada</title>
 <meta name="description" content="A internet que você contratou chega no seu celular por um caminho só seu. Baixe, entre com o CPF e conecte. Compartilhe com a família por QR code e escolha o prazo.">
 <meta name="theme-color" content="#05080F">
+<!-- max-image-preview:large libera a miniatura grande no resultado; sem isso
+     o Google usa a pequena e o resultado ocupa menos espaco na tela. -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://www.tunnelx.com.br/">
 
 <meta property="og:type" content="website">
@@ -14,13 +17,16 @@
 <meta property="og:site_name" content="TunnelX">
 <meta property="og:title" content="TunnelX — sua internet, sem configurar nada">
 <meta property="og:description" content="Baixou. Entrou. Tá na internet. E quando a família pedir, você libera com um QR code e escolhe por quanto tempo vale.">
-<meta property="og:image" content="https://www.tunnelx.com.br/img/logo.png">
+<meta property="og:image" content="https://www.tunnelx.com.br/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TunnelX — Baixou. Entrou. Tá na internet.">
 <meta property="og:url" content="https://www.tunnelx.com.br/">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="TunnelX — sua internet, sem configurar nada">
 <meta name="twitter:description" content="Baixou. Entrou. Tá na internet.">
-<meta name="twitter:image" content="https://www.tunnelx.com.br/img/logo.png">
+<meta name="twitter:image" content="https://www.tunnelx.com.br/img/og.png">
 
 <link rel="shortcut icon" href="img/favicon.jpg">
 <link rel="apple-touch-icon" href="img/logo-mark.png">
@@ -29,6 +35,122 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
+<!-- Dados estruturados. O FAQPage e gerado a partir das perguntas que estao
+     na tela: marcacao que descreve conteudo ausente da pagina e motivo de
+     acao manual no Search Console. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.tunnelx.com.br/#organizacao",
+      "name": "TunnelX",
+      "url": "https://www.tunnelx.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tunnelx.com.br/img/logo-mark.png",
+        "width": 500,
+        "height": 500
+      },
+      "slogan": "Sua rede, sem barreiras.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.tunnelxapp"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.tunnelx.com.br/#site",
+      "url": "https://www.tunnelx.com.br/",
+      "name": "TunnelX",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://www.tunnelx.com.br/#organizacao"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.tunnelx.com.br/#aplicativo",
+      "name": "Tunnel X",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Conectividade",
+      "operatingSystem": "Android 7.0 ou superior",
+      "url": "https://www.tunnelx.com.br/",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.tunnelxapp",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.tunnelxapp",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://www.tunnelx.com.br/#organizacao"
+      },
+      "description": "Acesso a internet entregue por tunel proprio. Entre com CPF e senha, conecte em um toque e compartilhe com a familia por QR code, escolhendo o prazo.",
+      "featureList": [
+        "Conexao sem configurar servidor ou importar arquivo",
+        "Chave e endereco proprios por aparelho",
+        "Compartilhamento por QR code com prazo escolhido",
+        "Remocao de acesso a qualquer momento"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL",
+        "description": "Download gratuito. O acesso a internet depende de plano contratado."
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.tunnelx.com.br/#duvidas",
+      "inLanguage": "pt-BR",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Preciso instalar alguma coisa em casa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Nada de aparelho novo, nada de mexer no roteador, nada de visita técnica. O TunnelX vive no celular."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funciona no iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ainda não. A versão para iPhone está em análise na Apple. Por enquanto o TunnelX funciona no Android 7 ou superior."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem eu convidar precisa pagar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. O convidado entra no seu plano e ocupa uma das vagas que você já contratou. Quem paga é você, uma vez só."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "E se eu trocar de celular?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Basta baixar o app no aparelho novo e entrar com o mesmo CPF e senha. O seu túnel volta sozinho."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dá para usar em dois celulares ao mesmo tempo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Na mesma conta, não: entrar no segundo aparelho desconecta o primeiro. Para colocar mais gente, use o convite por QR code — foi feito exatamente para isso."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -38,7 +160,7 @@
 <header class="cabecalho">
     <div class="container nav">
         <a href="#" class="marca" aria-label="TunnelX, início">
-            <img src="img/logo-mark.png" alt="" width="34" height="34">
+            <img src="img/logo-mark.png" alt="" width="34" height="34" fetchpriority="high" decoding="async">
             <span>TunnelX</span>
         </a>
 
@@ -444,7 +566,7 @@
         <div class="rodape-grade">
             <div class="rodape-marca">
                 <a href="#" class="marca">
-                    <img src="img/logo-mark.png" alt="" width="30" height="30">
+                    <img src="img/logo-mark.png" alt="" width="30" height="30" loading="lazy" decoding="async">
                     <span>TunnelX</span>
                 </a>
                 <p>Sua rede, sem barreiras.</p>
